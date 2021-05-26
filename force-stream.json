@@ -1,1 +1,0 @@
-{"id":"15133ca1-cd72-4b0a-ba06-6a2a9b64fff1","platform":"Salesforce","type":"Functional","key":"force-stream","domain":"salesforce.com","i18n":{"en":"Used to properly route server requests within Salesforce infrastructure for sticky sessions.","fr":"Utilisé pour corriger correctement les demandes de serveur dans l'infrastructure Salesforce pour des sessions collantes."}}

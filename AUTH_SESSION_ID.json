@@ -1,1 +1,0 @@
-{"id":"631c056d-0dd6-4fd7-8e16-f93158c727fb","platform":"Keycloak","type":"Functional","key":"AUTH_SESSION_ID","domain":"Advertiser's website domain","i18n":{"en":"ID of current authentication session.","fr":"ID de la session d'authentification actuelle."}}

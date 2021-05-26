@@ -1,1 +1,0 @@
-{"id":"63132c86-f1b6-4c12-b0a8-d1aa197158b5","platform":"Salesforce","type":"Functional","key":"oid","domain":"salesforce.com","i18n":{"en":"Used to redirect a user to the correct Salesforce org and assist the user for the next login.","fr":"Utilisé pour rediriger un utilisateur sur l'org Salesforce correct et aider l'utilisateur à la prochaine connexion."}}

@@ -1,1 +1,0 @@
-{"id":"6e164e03-e394-4a23-a479-ef78807c72c3","platform":"Salesforce","type":"Functional","key":"sid_Client","domain":"salesforce.com","i18n":{"en":"Used to validate orgid and userid on the client side.","fr":"Utilisé pour valider l'orgide et l'ID utilisateur sur le côté du client."}}

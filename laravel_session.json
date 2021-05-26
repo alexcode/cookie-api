@@ -1,1 +1,0 @@
-{"id":"492406bd-e296-41d0-8b42-16961a258b2d","platform":"Laravel","type":"Functional","key":"laravel_session","domain":"Advertiser's website domain (1st party)","i18n":{"en":"Internally laravel uses laravel_session to identify a session instance for a user","fr":"Interne, Laravel utilise laravel_session pour identifier une instance de session pour un utilisateur"}}

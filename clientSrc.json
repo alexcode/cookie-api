@@ -1,1 +1,0 @@
-{"id":"a7d2b130-e322-4f4d-86c4-b2c86e8e7517","platform":"Salesforce","type":"Functional","key":"clientSrc","domain":"salesforce.com","i18n":{"en":"Used to validate the IP from where a user logs in.","fr":"Utilisé pour valider l'adresse IP d'où un utilisateur se connecte."}}

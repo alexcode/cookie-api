@@ -1,1 +1,0 @@
-{"id":"2ba696af-536b-4900-98a0-0a6416eb2ea2","platform":"Salesforce","type":"Functional","key":"idccsrf","domain":"salesforce.com","i18n":{"en":"Used for SSO authentication as CSRF protection.","fr":"Utilisé pour l'authentification SSO en tant que protection CSRF."}}
