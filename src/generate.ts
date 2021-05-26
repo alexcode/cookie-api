@@ -14,10 +14,15 @@ const dir = path.resolve('./api');
 
 fs.mkdirSync(dir, { recursive: true });
 
-const files = list.map((cookie: CookieItem) => fs.promises.writeFile(
+const promises = list.map((cookie: CookieItem) => fs.promises.writeFile(
     `${dir}/${cookie.key}.json`, 
     JSON.stringify(cookie), 
     { encoding: 'utf8', flag: 'w' }
 ));
+promises.push(fs.promises.writeFile(
+    `${dir}/index.html`, 
+    JSON.stringify(list), 
+    { encoding: 'utf8', flag: 'w' }
+));
 
-Promise.all(files).then(console.log).catch(console.error);
+Promise.all(promises).then(console.log).catch(console.error);
