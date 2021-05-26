@@ -12,6 +12,7 @@ jobs:
           yarn install
           yarn build
           yarn command generate
+          touch api/.nojekyll
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.3

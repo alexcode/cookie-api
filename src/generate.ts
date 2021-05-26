@@ -17,8 +17,11 @@ fs.mkdirSync(dir, { recursive: true });
 const promises = [];
 promises.push(fs.promises.writeFile(
     `${dir}/index.json`, 
-    JSON.stringify(list), 
-    { encoding: 'utf8', flag: 'r' }
+    JSON.stringify(list.map((cookie: CookieItem) => ({
+        id: cookie.id,
+        path: `/${cookie.key}`
+    }))), 
+    { encoding: 'utf8', flag: 'w' }
 ));
 
 list.forEach((cookie: CookieItem) => {
@@ -26,9 +29,9 @@ list.forEach((cookie: CookieItem) => {
     promises.push(fs.promises.writeFile(
         `${dir}/${cookie.key}/index.json`, 
         JSON.stringify(cookie),
-        { encoding: 'utf8', flag: 'r' }
+        { encoding: 'utf8', flag: 'w' }
     ));
 });
 
 
-Promise.all(promises).then(console.log).catch(console.error);
+Promise.all(promises).catch(console.error);
