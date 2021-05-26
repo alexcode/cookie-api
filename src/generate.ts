@@ -14,15 +14,21 @@ const dir = path.resolve('./api');
 
 fs.mkdirSync(dir, { recursive: true });
 
-const promises = list.map((cookie: CookieItem) => fs.promises.writeFile(
-    `${dir}/${cookie.key}.json`, 
-    JSON.stringify(cookie), 
-    { encoding: 'utf8', flag: 'w' }
-));
+const promises = [];
 promises.push(fs.promises.writeFile(
-    `${dir}/index.html`, 
+    `${dir}/index.json`, 
     JSON.stringify(list), 
-    { encoding: 'utf8', flag: 'w' }
+    { encoding: 'utf8', flag: 'r' }
 ));
+
+list.forEach((cookie: CookieItem) => {
+    promises.push(fs.mkdirSync( `${dir}/${cookie.key}`, { recursive: true }));
+    promises.push(fs.promises.writeFile(
+        `${dir}/${cookie.key}/index.json`, 
+        JSON.stringify(cookie),
+        { encoding: 'utf8', flag: 'r' }
+    ));
+});
+
 
 Promise.all(promises).then(console.log).catch(console.error);
